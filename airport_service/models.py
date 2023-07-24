@@ -47,7 +47,7 @@ class Airplane(models.Model):
     rows = models.IntegerField()
     seats_in_row = models.IntegerField()
     airplane_type = models.ForeignKey(AirplaneType, on_delete=models.CASCADE, related_name="airplanes")
-    crew = models.ManyToManyField(Crew, on_delete=models.CASCADE)
+    crew = models.ManyToManyField(Crew)
 
     @property
     def capacity(self) -> int:
