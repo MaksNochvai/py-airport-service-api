@@ -14,25 +14,23 @@ Install PostgreSQL and create a database
 
 1. Clone the repository:
 git clone https://github.com/MaksNochvai/py-airport-service-api
-2. Set up a virtual environment and activate it:
+2. Change directory after cloning:
+```
+git checkout -b develop
+```
+3. Set up a virtual environment and activate it:
 ```
 python -m venv venv
 source venv/bin/activate # Activation of the virtual environment (Unix)
 venv\Scripts\activate # Activation of the virtual environment (Windows)
 ```
-3. Install the required dependencies:
+4. Install the required dependencies:
 ```
 pip install -r requirements.txt
 ```
-4. Set the following environment variables:
-```
-set POSTGRES_HOST=<your POSTGRES HOST name>
-set POSTGRES_DB=<your POSTGRES DB name>
-set POSTGRES_USER=<your POSTGRES USER name>
-set POSTGRES_PASSWORD=<your POSTGRES PASSWORD>
-set SECRET_KEY=<your SECRET_KEY>
-```
-5. Start the development server:
+5. Create .env file using the schema you can see in the .env_sample file:
+
+6. Start the development server:
 ```
 python manage.py migrate
 python manage.py runserver
