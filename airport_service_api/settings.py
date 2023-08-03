@@ -84,12 +84,12 @@ WSGI_APPLICATION = 'airport_service_api.wsgi.application'
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",   # Використовуйте 'django.db.backends.postgresql' для PostgreSQL.
-        "NAME": BASE_DIR / "db.sqlite3",         # Шлях до файлу бази даних SQLite або назва бази даних PostgreSQL.
-        "USER": "",                             # Користувач PostgreSQL (залиште порожнім для SQLite).
-        "PASSWORD": "",                         # Пароль користувача PostgreSQL (залиште порожнім для SQLite).
-        "HOST": "",                             # Шлях до сервера PostgreSQL (залиште порожнім для SQLite).
-        "PORT": "",                             # Порт сервера PostgreSQL (залиште порожнім для SQLite).
+        "ENGINE": "django.db.backends.postgresql",
+        "HOST": os.environ["POSTGRES_HOST"],
+        "NAME": os.environ["POSTGRES_DB"],
+        "USER": os.environ["POSTGRES_USER"],
+        "PASSWORD": os.environ["POSTGRES_PASSWORD"],
+        "PORT": "5432"
     }
 }
 

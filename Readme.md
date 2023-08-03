@@ -13,8 +13,7 @@ The Airport Service API is a Django-based web application that provides function
 Install PostgreSQL and create a database
 
 1. Clone the repository:
-git clone https://github.com/MaksNochvai/dockerize_drf_cinema.git
-
+git clone https://github.com/MaksNochvai/py-airport-service-api
 2. Set up a virtual environment and activate it:
 ```
 python -m venv venv
