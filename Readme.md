@@ -6,6 +6,10 @@ The Airport Service API is a Django-based web application that provides function
 
 ----
 
+## Project Structure
+
+![img.png](img.png)
+
 Install PostgreSQL and create a database
 
 1. Clone the repository:
